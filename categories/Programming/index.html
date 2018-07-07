@@ -178,6 +178,7 @@
 <p>However, there is a pretty serious issue to consider with this problem, and that is the size of the dictionary. The dictionary file contains nearly .27 million words in it. Although efficient data types will be used to handle them, the fact that there are so many possible “next words” for each word is frightening. The queue that stores the stacks builds up too quickly that the memory it needs can’t be ignored.<br>With only a 5-letter word example that should take merely 9 steps to finish, I get an error message:</p>
 <p><code>A C++ exception occurred during program execution:<br>std::bad_alloc<br><br>Stack trace:<br>vector.h         Vector::operator=(Vector const&amp;)<br>queue.h          Queue::expandRingBufferCapacity()<br>queue.h          Queue::enqueue(Stack const&amp;)<br>wordladder.cpp   game(Set const&amp;, string, string)<br>wordladder.cpp   interact()<br>wordladder.cpp   main()<br></code></p>
 <p>It appears that while trying to expand <code>RingBufferCapacity</code>, the memory decided that there’s not enough usable memory to allocate for my program, therefore it shut down.<br>Instead of blaming my computer, which is not crappy at all considering the fact that it has 16 GB of memory, for not having enough memory to run this program, I decided to look into the codes and see if there’s any way to optimize it so that it won’t ask for that much memory.</p>
+<p>To be continued…</p>
 
 
     
