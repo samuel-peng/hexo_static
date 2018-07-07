@@ -6,7 +6,7 @@
       <title>Word Ladder</title>
       <link href="/blog/2018/07/07/word-ladder/"/>
       <url>/blog/2018/07/07/word-ladder/</url>
-      <content type="html"><![CDATA[<p>You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at <span style="color: red; font-weight: bold;">Stanford</span>.</p>]]></content>
+      <content type="html"><![CDATA[<p>You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at <span style="color: red; font-weight: bold;">Stanford&nbsp;University</span>.<br>For those of you who don’t know about word ladder (I doubt there is any), here’s a condensed version of the problem description.</p><blockquote><p>Input: a dictionary file and two words.<br>Objective: find a path to go from the first word to the second, by changing one letter each time.<br>Output: the path from word 1 to word two.<br>Simple enough.</p></blockquote>]]></content>
       
       <categories>
           
