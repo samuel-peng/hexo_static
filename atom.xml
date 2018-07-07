@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://samuelpeng.com/blog/"/>
-  <updated>2018-07-07T02:20:41.651Z</updated>
+  <updated>2018-07-07T05:13:38.749Z</updated>
   <id>http://samuelpeng.com/blog/</id>
   
   <author>
@@ -17,51 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://samuelpeng.com/blog/2018/07/07/hello-world/"/>
-    <id>http://samuelpeng.com/blog/2018/07/07/hello-world/</id>
-    <published>2018-07-07T02:20:41.651Z</published>
-    <updated>2018-07-07T02:20:41.651Z</updated>
+    <title>Word Ladder</title>
+    <link href="http://samuelpeng.com/blog/2018/07/07/word-ladder/"/>
+    <id>http://samuelpeng.com/blog/2018/07/07/word-ladder/</id>
+    <published>2018-07-07T10:10:20.000Z</published>
+    <updated>2018-07-07T05:13:38.749Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>first-post</title>
-    <link href="http://samuelpeng.com/blog/2018/07/07/first-post/"/>
-    <id>http://samuelpeng.com/blog/2018/07/07/first-post/</id>
-    <published>2018-07-07T00:23:00.000Z</published>
-    <updated>2018-07-07T02:23:42.885Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>This is my first post!</strong></p>]]></content>
+    <content type="html"><![CDATA[<p>You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at <span style="color: red; font-weight: bold;">Stanford</span>.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;This is my first post!&lt;/strong&gt;&lt;/p&gt;
-
+        &lt;p&gt;You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at &lt;span style=&quot;color: red; font-weight: 
       
     
     </summary>
     
-      <category term="Hexo" scheme="http://samuelpeng.com/blog/categories/Hexo/"/>
+      <category term="Programming" scheme="http://samuelpeng.com/blog/categories/Programming/"/>
     
     
-      <category term="Test" scheme="http://samuelpeng.com/blog/tags/Test/"/>
+      <category term="C++" scheme="http://samuelpeng.com/blog/tags/C/"/>
     
-      <category term="Blog" scheme="http://samuelpeng.com/blog/tags/Blog/"/>
+      <category term="BFS" scheme="http://samuelpeng.com/blog/tags/BFS/"/>
+    
+      <category term="Classic" scheme="http://samuelpeng.com/blog/tags/Classic/"/>
     
   </entry>
   
