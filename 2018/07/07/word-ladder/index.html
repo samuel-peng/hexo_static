@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="Samuel Peng">
 <meta property="og:description" content="You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at Stanford&amp;nbsp;University.For those of you who don’t know about word ladder (I doubt there is any), he">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-07T05:40:16.703Z">
+<meta property="og:updated_time" content="2018-07-07T05:44:08.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Word Ladder">
 <meta name="twitter:description" content="You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at Stanford&amp;nbsp;University.For those of you who don’t know about word ladder (I doubt there is any), he">
@@ -177,7 +177,12 @@
 <blockquote>
 <p>to find a path from word 1 to word 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;create a queue of stacks, initially containing only a single stack storing {word 1}.<br>&nbsp;&nbsp;&nbsp;&nbsp;loop until queue is empty (can’t find the path) or word 2 is found:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dequeue a stack s.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for each valid unused English word w that differs by 1 letter of the word on top of s<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create a new stack s2 whose contents are s + w added on top<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add s2 to the queue</p>
 </blockquote>
-<p>However, there is a pretty serious issue to consider with this problem, and that is the size of the dictionary. The dictionary file contains nearly .27 million words in it. Although efficient data types will be used to handle them, the fact that there are so many possible “next words” for each word is frightening. The queue that stores the stacks builds up too quickly that the memory it needs can’t be ignored.</p>
+<p>However, there is a pretty serious issue to consider with this problem, and that is the size of the dictionary. The dictionary file contains nearly .27 million words in it. Although efficient data types will be used to handle them, the fact that there are so many possible “next words” for each word is frightening. The queue that stores the stacks builds up too quickly that the memory it needs can’t be ignored.<br>With only a 5-letter word example, that should take 9 steps to finish, I get an error message:</p>
+<p><code></code></p>
+<blockquote>
+<p>A C++ exception occurred during program execution:<br>std::bad_alloc</p>
+<p>Stack trace:<br>vector.h         Vector::operator=(Vector const&amp;)<br>queue.h          Queue::expandRingBufferCapacity()<br>queue.h          Queue::enqueue(Stack const&amp;)<br>wordladder.cpp   game(Set const&amp;, string, string)<br>wordladder.cpp   interact()<br>wordladder.cpp   main()<br></p>
+</blockquote>
 
   	</div>
 	  
