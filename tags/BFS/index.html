@@ -174,7 +174,19 @@
 <p>Simple enough. However, the problem requires the program <em>not</em> to use <strong>recursion</strong> but use <strong>BFS</strong> to accomplish such task.</p>
 <p>It’s a fairly easy problem, and the pseudocode was even given to us:</p>
 <blockquote>
-<p>to find a path from word 1 to word 2:<br>    create a queue of stacks, initially containing only a single stack storing {word 1}.<br>    loop until queue is empty (can’t find the path) or word 2 is found:<br>        dequeue a stack s.<br>        for each valid unused English word w that differs by 1 letter of the word on top of s<br>            create a new stack s2 whose contents are s + w added on top<br>            add s2 to the queue</p>
+<p>to find a path from word 1 to word 2:</p>
+<blockquote>
+<pre><code>create a queue of stacks, initially containing only a single stack storing {word 1}.
+loop until queue is empty (can&apos;t find the path) or word 2 is found:
+</code></pre><blockquote>
+<pre><code>dequeue a stack s.
+for each valid unused English word w that differs by 1 letter of the word on top of s
+</code></pre><blockquote>
+<pre><code>create a new stack s2 whose contents are s + w added on top
+add s2 to the queue
+</code></pre></blockquote>
+</blockquote>
+</blockquote>
 </blockquote>
 
 
