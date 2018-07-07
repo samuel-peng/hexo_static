@@ -168,6 +168,10 @@
 <p>Input: a dictionary file and two words.<br>Objective: find a path to go from the first word to the second, by changing one letter each time.<br>Output: the path from word 1 to word two.</p>
 </blockquote>
 <p>Simple enough. However, the problem requires the program <em>not</em> to use <strong>recursion</strong> but use <strong>BFS</strong> to accomplish such task.</p>
+<p>It’s a fairly easy problem, and the pseudocode was even given to us:</p>
+<blockquote>
+<p>to find a path from word 1 to word 2:<br>    create a queue of stacks, initially containing only a single stack storing {word 1}.<br>    loop until queue is empty (can’t find the path) or word 2 is found:<br>        dequeue a stack s.<br>        for each valid unused English word w that differs by 1 letter of the word on top of s<br>            create a new stack s2 whose contents are s + w added on top<br>            add s2 to the queue</p>
+</blockquote>
 
 
     
