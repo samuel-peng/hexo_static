@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://samuelpeng.com/blog/"/>
-  <updated>2018-07-07T05:17:16.672Z</updated>
+  <updated>2018-07-07T05:19:25.097Z</updated>
   <id>http://samuelpeng.com/blog/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://samuelpeng.com/blog/2018/07/07/word-ladder/"/>
     <id>http://samuelpeng.com/blog/2018/07/07/word-ladder/</id>
     <published>2018-07-07T10:10:20.000Z</published>
-    <updated>2018-07-07T05:17:16.672Z</updated>
+    <updated>2018-07-07T05:19:25.097Z</updated>
     
-    <content type="html"><![CDATA[<p>You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at <span style="color: red; font-weight: bold;">Stanford&nbsp;University</span>.<br>For those of you who don’t know about word ladder (I doubt there is any), here’s a condensed version of the problem description.</p><blockquote><p>Input: a dictionary file and two words.<br>Objective: find a path to go from the first word to the second, by changing one letter each time.<br>Output: the path from word 1 to word two.<br>Simple enough.</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>You know it, the classic word ladder problem. It turns out to be part 1 of my second assignment at <span style="color: red; font-weight: bold;">Stanford&nbsp;University</span>.<br>For those of you who don’t know about word ladder (I doubt there is any), here’s a condensed version of the problem description.</p><blockquote><p>Input: a dictionary file and two words.<br>Objective: find a path to go from the first word to the second, by changing one letter each time.<br>Output: the path from word 1 to word two.</p></blockquote><p>Simple enough. However, the problem requires the program <em>not</em> to use <strong>recursion</strong> but use <strong>BFS</strong> to accomplish such task.</p>]]></content>
     
     <summary type="html">
     
