@@ -171,14 +171,13 @@
 <blockquote>
 <p><code>Input</code>: a dictionary file and two words.<br><code>Objective</code>: find a path to go from the first word to the second, by changing one letter each time.<br><code>Output</code>: the path from word 1 to word two.</p>
 </blockquote>
-<p>Simple enough. However, the problem requires the program <em>not</em> to use <strong>recursion</strong> but use <strong>BFS</strong> to accomplish such task.</p>
-<p>It’s a fairly easy problem, and the pseudocode was even given to us:</p>
+<p>Simple enough. However, the problem requires the program <em>not</em> to use <strong>recursion</strong> but use <strong>BFS</strong> to accomplish such task.<br>It’s a fairly easy problem, and the pseudocode was even given to us:</p>
 <blockquote>
 <p>to find a path from word 1 to word 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;create a queue of stacks, initially containing only a single stack storing {word 1}.<br>&nbsp;&nbsp;&nbsp;&nbsp;loop until queue is empty (can’t find the path) or word 2 is found:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dequeue a stack s.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for each valid unused English word w that differs by 1 letter of the word on top of s<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create a new stack s2 whose contents are s + w added on top<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add s2 to the queue</p>
 </blockquote>
 <p>However, there is a pretty serious issue to consider with this problem, and that is the size of the dictionary. The dictionary file contains nearly .27 million words in it. Although efficient data types will be used to handle them, the fact that there are so many possible “next words” for each word is frightening. The queue that stores the stacks builds up too quickly that the memory it needs can’t be ignored.<br>With only a 5-letter word example that should take merely 9 steps to finish, I get an error message:</p>
 <p><code>A C++ exception occurred during program execution:<br>std::bad_alloc<br><br>Stack trace:<br>vector.h         Vector::operator=(Vector const&amp;)<br>queue.h          Queue::expandRingBufferCapacity()<br>queue.h          Queue::enqueue(Stack const&amp;)<br>wordladder.cpp   game(Set const&amp;, string, string)<br>wordladder.cpp   interact()<br>wordladder.cpp   main()<br></code></p>
-<p>It appears that while trying to expand <code>RingBufferCapacity</code>, the memory decided that there’s not enough usable memory to allocate for my program, therefore it shut down.</p>
+<p>It appears that while trying to expand <code>RingBufferCapacity</code>, the memory decided that there’s not enough usable memory to allocate for my program, therefore it shut down.<br>Instead of blaming my computer, which is not crappy at all considering the fact that it has 16 GB of memory, for not having enough memory to run this program, I decided to look into the codes and see if there’s any way to optimize it so that it won’t ask for that much memory.</p>
 
 
     
@@ -219,10 +218,6 @@
 <div class='header'>Links</div>
 <div class='content'>
     <ul class="entry">
-    
-        <li><a class="flat-box" target="_blank" href="http://samuelpeng.com/">
-            <div class='name'>Samuel Peng - Main Page</div>
-        </a></li>
     
         <li><a class="flat-box" target="_blank" href="http://joelsparksmusic.com/">
             <div class='name'>Joel Sparks</div>
